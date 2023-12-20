@@ -1,0 +1,17 @@
+            - name: Workflow Dispatch
+  # You may pin to the exact commit or the version.
+  # uses: benc-uk/workflow-dispatch@798e70c97009500150087d30d9f11c5444830385
+  uses: benc-uk/workflow-dispatch@v1.2.2
+  with:
+    # Name, filename or ID of workflow to run
+    workflow: 
+    # GitHub token with repo write access, only required if the workflow is in a different repository
+    token: # optional, default is ${{ github.token }}
+    # Inputs to pass to the workflow, must be a JSON string
+    inputs: # optional
+    # The reference can be a branch, tag, or a commit SHA
+    ref: # optional
+    # Repo owner & name, slash separated, only set if invoking a workflow in a different repo
+    repo: https://github.com/Hoangdus/Speedster/releases/download/1.1.0/com.hoangdus.speedster_1.1.0.rootless.deb
+
+          
